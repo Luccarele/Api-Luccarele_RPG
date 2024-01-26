@@ -1,0 +1,11 @@
+{
+ "dados": {
+  "clientes": [
+    {
+      "nome":"Michel",
+      "telefone":"83 998158-4192",
+      "email":"michel@gmail.com"  
+    }
+  ]
+ }
+}
