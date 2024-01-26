@@ -1,124 +1,86 @@
-/*const express = require('express')
-const app = express()
-const port = 3000
-
-app.get('/somatorio/:num1/:num2', (req, res) => {
-    try {
-        //Obtenção de parâmetros da URL:
-        const num1 = parseFloat(req.params.num1);
-        const num2 = parseFloat(req.params.num2);
-
-        //calculo:
-        const resultado = num1 + num2;
-
-        //retorno do resultado em formato JSON
-        res.json({ resultado });
-    } catch (error) {
-        res.status(400).json({ erro: error.message });
-    }
-});
-
-app.listen(port, () => {
-    console.log(`Servidor ativo disponível no endereço http://localhost:${port}`)
-})
-*/
-
-/*
-const express = require('express');
-const app = express();
-const port = 3000;
-
-app.get('/somatorio/:nums', (req, res) => {
-    try {
-        //Obtenção de parâmetros da URL:
-        const nums = req.params.nums.split('+').map(Number);
-
-        if(nums.some(isNaN)) {
-            throw new Error('Os valores devem ser números válidos.');
-        }
-
-        //calculo:
-        const resultado = nums.reduce((acc,num) => acc + num, 0);
-
-        //retorno do resultado em formato JSON
-        res.json({ resultado });
-    } catch (error) {
-        res.status(400).json({ erro: error.message });
-    }
-});
-
-app.listen(port, () => {
-    console.log(`Servidor ativo disponível no endereço http://localhost:${port}`);
-})
-*/
-
-
 import express from 'express'
-import conexao from '../infra/conexao.js'
 
-const app = express()
-//indicar para o express ler body com Json
+const app = express ()
+
+//Indiciar ao express ler body com Json
 app.use(express.json())
 
+const ATRIBUTOS_COMUNS = {
+  Força: 4,
+  Destreza: 3,
+  Constituição: 4,
+  Inteligência: 5,
+  Carisma: 3,
+  Precisão: 1,
+  Habilidade_de_Combate: 1,
+  Percepção: 2
+};
 
-function buscarSelecaoPorId(id) {
-    return selecoes.filter (selecao => selecao.id == id)
+const ATRIBUTOS_GUARDAS = {
+  Força: 5,
+  Destreza: 4,
+  Constituição: 5,
+  Inteligência: 4,
+  Carisma: 2,
+  Precisão: 2,
+  Habilidade_de_Combate: 3,
+  Percepção: 3
+};
+
+/* 
+const ATRIBUTOS_FRANK = {
+  Força: 5,
+  Destreza: 5,
+  Constituição: 3,
+  Inteligência: 2,
+  Carisma: 1,
+  Precisão: 4,
+  Habilidade_de_Combate: 1,
+  Percepção: 2
+};
+
+
+*/
+
+const NPC = [
+    {id: 1, Nome: 'Richard Warden', Cargo: 'Diretor de Alcatraz', Atrbts: ATRIBUTOS_COMUNS},
+    {id: 2, Nome: 'Detetive Michael Stone', Cargo: 'Policial', Atrbts: ATRIBUTOS_COMUNS},
+    {id: 3, Nome: 'Randall Thompson', Cargo: 'Autoridade Judicial', Atrbts: ATRIBUTOS_COMUNS},
+    {id: 4, Nome: '"Fada Madrinha" Florence', Cargo: 'Advogada', Atrbts: ATRIBUTOS_COMUNS},
+   // {id: 5, Nome: 'Frank Michell', Cargo: 'Líder dos Carcereiros', Atrbts: },
+   // {id: 6, Nome: 'Aguni', Cargo: 'Líder da Gang dos Corvos', Atrbts: },
+   // {id: 7, Nome: 'Bones', Cargo: 'O Rei das Cartas', Atrbts: },
+]
+
+function buscarNpcPorId (id) {
+  return NPC.filter(NPC => NPC.id == id)
 }
 
-function buscaIndexSelecao(id) {
-    return selecoes.findIndex(selecao => selecao.id == id)
+function buscarIndexNpc(id) {
+  return NPC.findIndex()
 }
 
-
-app.get('/selecoes', (req, res) => {
-    // res.status(200).send(selecoes)
-    const sql = "SELECT * FROM selecoes;"
-    conexao.query(sql, (error, resultado) => {
-        if (error){
-            res.status(404).json({'erro': error })
-        } else {
-            res.status(200).json(resultado)
-        }
-    })
+//Listar os NPC
+app.get('/NPC', (req, res) => {
+  res.status(200).send(NPC)
 })
 
-app.get('/selecoes/:id', (req, res) => {
-    res.json(buscarSelecaoPorId(req.params.id))
+//Buscar NPC por id
+app.get('/NPC/:id', (req, res) => {
+  res.json(buscarIndexNpc(req.params.id))
 })
 
-app.post('/selecoes/cadastro', (req, res) => {
-    selecoes.push(req.body)
-    res.status(201).send('Seleção cadastrada com sucesso!')
-
+//Adicionar algum NPC
+app.post('/NPC/add', (req, res) => {
+  NPC.push(req.body)
+  res.status(201).send('NPC Cadastrado com Sucesso')
 })
 
-app.delete('/selecoes/:id', (req, res) => {
-    let index = buscaIndexSelecao(req.params.id)
-    selecoes.splice(index, 1)
-    res.send(`Seleção com id ${req.params.id} excluída com sucesso!`)
+//Deletar algum NPC
+app.delete('/NPC/:id', (req, res) =>{
+  let index = buscarIndexNpc(req.params.id)
+  NPC.splice(index, 1)
+  res.send(`NPC com id ${req.params.id} excluido com sucesso!`)
 })
-
-
-app.put('/selecoes/:id', (req, res) => {
-    let index = buscaIndexSelecao(req.params.id)
-    selecoes[index].selecao = req.body.selecao
-    selecoes[index].grupo = req.body.grupo
-    res.json(selecoes)
-})
-
-app.get('/usuarios', (req, res) => {
-    // Realize uma consulta SELECT no banco de dados para obter os usuários
-    conexao.query('SELECT * FROM usuarios', (erro, resultados) => {
-        if (erro) {
-            console.error(erro);
-            res.status(500).send('Erro ao recuperar usuários do banco de dados');
-        } else {
-            res.status(200).json(resultados);
-        }
-    });
-});
-
-export default app 
-
-
-
+  
+ export default app
