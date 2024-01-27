@@ -102,13 +102,7 @@ app.post('/NPC/:id', (req, res) => {
     res.status(404).json({error: 'NPC não encontrado'})}
 })
 
-//Deletar algum NPC
-app.delete('/NPC/:id', (req, res) =>{
-  let index = buscarIndexNpc(req.params.id)
-  NPC.splice(index, 1)
-  res.send(`NPC com id ${req.params.id} excluido com sucesso!`)
-})
-
+//Atualizar dados NPCs
 app.put('/NPC/:id', (req, res) => {
   let index = buscarIndexNpc(req.params.id);
 
@@ -119,6 +113,13 @@ app.put('/NPC/:id', (req, res) => {
     res.status(404).json({ error: 'NPC não encontrado' });
   }
 });
+
+//Deletar algum NPC
+app.delete('/NPC/:id', (req, res) =>{
+  let index = buscarIndexNpc(req.params.id)
+  NPC.splice(index, 1)
+  res.send(`NPC com id ${req.params.id} excluido com sucesso!`)
+})
 
   
 export default app
