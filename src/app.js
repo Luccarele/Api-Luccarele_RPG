@@ -5,6 +5,17 @@ const app = express ()
 //Indiciar ao express ler body com Json
 app.use(express.json())
 
+const ATRIBUTOS = {
+  Força: '',
+  Destreza: '',
+  Constituição: '',
+  Inteligência: '',
+  Carisma: '',
+  Precisão: '',
+  Habilidade_de_Combate: '',
+  Percepção: '',
+};
+
 const ATRIBUTOS_COMUNS = {
   Força: 4,
   Destreza: 3,
@@ -57,7 +68,7 @@ function buscarNpcPorId (id) {
 }
 
 function buscarIndexNpc(id) {
-  return NPC.findIndex()
+  return NPC.findIndex(NPC => NPC.id == id)
 }
 
 //Listar os NPC
@@ -71,9 +82,24 @@ app.get('/NPC/:id', (req, res) => {
 })
 
 //Adicionar algum NPC
-app.post('/NPC/add', (req, res) => {
+app.post('/NPC/:id', (req, res) => {
   NPC.push(req.body)
-  res.status(201).send('NPC Cadastrado com Sucesso')
+  let index = buscarIndexNpc(req.params.id);
+  
+  if (index !== -1) {
+    const atributosAtualizados = {};
+
+    for (const atributo in ATRIBUTOS) {
+      
+        if(req.body.hasOwnProperty(atributo)) {
+          atributosAtualizados[atributo] = req.body[atributo];
+        }
+    }
+      Object.assign(NPC[index].Atrbts, atributosAtualizados);
+      
+      res.json(NPC);
+  } else {
+    res.status(404).json({error: 'NPC não encontrado'})}
 })
 
 //Deletar algum NPC
@@ -83,4 +109,4 @@ app.delete('/NPC/:id', (req, res) =>{
   res.send(`NPC com id ${req.params.id} excluido com sucesso!`)
 })
   
- export default app
+export default app
