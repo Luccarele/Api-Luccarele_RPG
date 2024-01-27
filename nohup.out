@@ -294,3 +294,256 @@ Main~handleUncaughtError - Uncaught errors Error: Render frame was disposed befo
 [10160:0127/092659.860136:ERROR:gpu_process_host.cc(969)] GPU process launch failed: error_code=1002
 [10160:0127/092659.860173:FATAL:gpu_data_manager_impl_private.cc(447)] GPU process isn't usable. Goodbye.
 [0127/092659.860788:ERROR:scoped_ptrace_attach.cc(27)] ptrace: Operation not permitted (1)
+The disableGPU setting is set to undefined
+Not disabling GPU
+Gtk-Message: 09:40:43.198: Failed to load module "xapp-gtk3-module"
+Main: Starting cleanup of stale files
+[20923:0127/094043.233377:ERROR:angle_platform_impl.cc(44)] Display.cpp:966 (initialize): ANGLE Display::initialize error 12289: Could not dlopen libGL.so.1: libGL.so.1: cannot open shared object file: No such file or directory
+[20923:0127/094043.233502:ERROR:gl_surface_egl.cc(808)] EGL Driver message (Critical) eglInitialize: Could not dlopen libGL.so.1: libGL.so.1: cannot open shared object file: No such file or directory
+[20923:0127/094043.233519:ERROR:gl_surface_egl.cc(1430)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+[20923:0127/094043.233593:ERROR:angle_platform_impl.cc(44)] Display.cpp:966 (initialize): ANGLE Display::initialize error 12289: Could not dlopen libGL.so.1: libGL.so.1: cannot open shared object file: No such file or directory
+[20923:0127/094043.233610:ERROR:gl_surface_egl.cc(808)] EGL Driver message (Critical) eglInitialize: Could not dlopen libGL.so.1: libGL.so.1: cannot open shared object file: No such file or directory
+[20923:0127/094043.233626:ERROR:gl_surface_egl.cc(1430)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+[20923:0127/094043.233641:ERROR:gl_ozone_egl.cc(20)] GLSurfaceEGL::InitializeOneOff failed.
+[20923:0127/094043.235587:ERROR:viz_main_impl.cc(188)] Exiting GPU process due to errors during initialization
+Main: Cleanup of stale files completed
+[20936:0127/094043.246758:ERROR:angle_platform_impl.cc(44)] Display.cpp:966 (initialize): ANGLE Display::initialize error 12289: Could not dlopen libGL.so.1: libGL.so.1: cannot open shared object file: No such file or directory
+[20936:0127/094043.246902:ERROR:gl_surface_egl.cc(808)] EGL Driver message (Critical) eglInitialize: Could not dlopen libGL.so.1: libGL.so.1: cannot open shared object file: No such file or directory
+[20936:0127/094043.246920:ERROR:gl_surface_egl.cc(1430)] eglInitialize OpenGL failed with error EGL_NOT_INITIALIZED, trying next display type
+[20936:0127/094043.246994:ERROR:angle_platform_impl.cc(44)] Display.cpp:966 (initialize): ANGLE Display::initialize error 12289: Could not dlopen libGL.so.1: libGL.so.1: cannot open shared object file: No such file or directory
+[20936:0127/094043.247014:ERROR:gl_surface_egl.cc(808)] EGL Driver message (Critical) eglInitialize: Could not dlopen libGL.so.1: libGL.so.1: cannot open shared object file: No such file or directory
+[20936:0127/094043.247032:ERROR:gl_surface_egl.cc(1430)] eglInitialize OpenGLES failed with error EGL_NOT_INITIALIZED
+[20936:0127/094043.247046:ERROR:gl_ozone_egl.cc(20)] GLSurfaceEGL::InitializeOneOff failed.
+[20936:0127/094043.247840:ERROR:viz_main_impl.cc(188)] Exiting GPU process due to errors during initialization
+Main~createDefaultWorkingDir - Default working dir creation already attempted
+1706359243261 main info "Booting Postman 10.22.0, linux-6.5.0-14-generic on x64"
+1706359243262 main info "EventBus~initialize - Success"
+1706359243263 main info "Proxy configuration has not been setup"
+1706359243264 main info "CloudProxyManager~init - Success"
+[20946:0127/094043.264980:ERROR:sandbox_linux.cc(377)] InitializeSandbox() called with multiple threads in process gpu-process.
+MESA-LOADER: failed to open iris (search paths /snap/postman/238/usr/lib/x86_64-linux-gnu/dri)
+failed to load driver: iris
+MESA-LOADER: failed to open kms_swrast (search paths /snap/postman/238/usr/lib/x86_64-linux-gnu/dri)
+failed to load driver: kms_swrast
+MESA-LOADER: failed to open swrast (search paths /snap/postman/238/usr/lib/x86_64-linux-gnu/dri)
+failed to load swrast driver
+1706359243276 main info "performShellDataMigration: Migration has already been done. Bailing out"
+1706359243280 main info "UpdateHandler~init - Success"
+1706359243281 main info "LeaderSelection: Initialized successfully"
+1706359243282 main info "VersionDependencyService: Initialized successfully"
+1706359243286 main info "LinuxAutoUpdater~Cleanup - Initial cleanup successful"
+1706359243297 main info "GPU detected VID 0 DID 0 ACTIVE false"
+1706359243307 main info "shellController~init: Success"
+1706359243310 main info "shellMeta~init: Success"
+1706359243310 main info "partitionMigrationService: State of V7 partition:"
+1706359243310 main info "partitionMigrationService: V7 partitions",[]
+1706359243310 main info "partitionMigrationService~rectifyNamespaceOfScratchPadPartition: There is no partition with scratchpad namespace"
+1706359243310 main info "partitionMigrationService~rectifyNamespaceOfScratchPadPartition: There is no transit partition which could have been used for scratchpad"
+1706359243311 main info "partitionMigrationService~init: Success"
+1706359243317 main info "partitionMigrationService~runV8PartitionsIntegrity: Two way migration~ removing the following partitions from v8",[]
+1706359243319 main info "userPartitionService~getRecentV8UserPartition: recent v8 user context partition ","5fafe82c-abd2-40af-ba22-36789aab9e38"
+1706359243320 main info "userPartitionService~_rectifyTheActivePartitionOfApplication: Setting the active partition to ","5fafe82c-abd2-40af-ba22-36789aab9e38"
+1706359243324 main info "userPartitionService~init: Success"
+1706359243331 main info "userPartitionService: State of v8 partition system:"
+1706359243333 main info "shell~init~getPartitionToLoad: loading active partition"
+1706359243334 main info "userPartitionService: List of partitions:",[{"partitionId":"5fafe82c-abd2-40af-ba22-36789aab9e38","namespace":"users","userId":"32342851","teamId":"0","lastUpdated":"2024-01-27T12:27:25.125Z"},{"partitionId":"c56f38a0-4fce-4075-af6f-eeae4292c646","namespace":"scratchPad","userId":0,"teamId":0,"isDirty":false}]
+1706359243334 main info "userPartitionService: users global meta:",{}
+1706359244766 main info "RuntimeIPCAgent~started: Success"
+1706359244903 main info "Main~getRemoteInitPath:: "
+INTERCEPTOR CONNECTIVITY: Connecting to Interceptor Bridge
+IPCClient ~ WindowHandler: New event is received { type: 'window-opened' }
+1706359245090 main info "windowManager: First requester booted successfully."
+1706359245090 main info "windowManager~restoreWindows: Restoring requester windows"
+1706359245091 main info "Main~AppEvents - Received booted event for process requester.Version 10.22.6 UI Version: 10.22.6-ui-240122-0621 Desktop Platform Version: 10.22.0"
+1706359245158 main info "Main~getRemoteInitPath:: "
+1706359245499 main info "Main~getPlatformLaunchPerfMetrics"
+1706359245816 main info "Main - model-events~user - (user, bootstrapUser) received"
+1706359245817 main info "model-events~user - bootstrapUser received"
+1706359245831 main info "userPartitionService~associateTransitPartition: ",{"partitionId":"5fafe82c-abd2-40af-ba22-36789aab9e38","context":{"namespace":"users","userId":"32342851","teamId":"0"}}
+1706359245842 main info "userPartitionService: State of v8 partition system:"
+1706359245845 main info "userPartitionService: List of partitions:",[{"partitionId":"5fafe82c-abd2-40af-ba22-36789aab9e38","namespace":"users","userId":"32342851","teamId":"0","lastUpdated":"2024-01-27T12:40:45.831Z"},{"partitionId":"c56f38a0-4fce-4075-af6f-eeae4292c646","namespace":"scratchPad","userId":0,"teamId":0,"isDirty":false}]
+1706359245845 main info "userPartitionService: users global meta:",{}
+1706359245996 main info "INTERCEPTOR CONNECTIVITY: Attempting to start websocket server on port 15611"
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+Fontconfig warning: "/etc/fonts/conf.d/10-hinting-slight.conf", line 4: unknown element "its:rules"
+Fontconfig warning: "/etc/fonts/conf.d/10-hinting-slight.conf", line 5: unknown element "its:translateRule"
+Fontconfig error: "/etc/fonts/conf.d/10-hinting-slight.conf", line 5: invalid attribute 'translate'
+Fontconfig error: "/etc/fonts/conf.d/10-hinting-slight.conf", line 5: invalid attribute 'selector'
+Fontconfig error: "/etc/fonts/conf.d/10-hinting-slight.conf", line 6: invalid attribute 'xmlns:its'
+Fontconfig error: "/etc/fonts/conf.d/10-hinting-slight.conf", line 6: invalid attribute 'version'
+Fontconfig warning: "/etc/fonts/conf.d/10-hinting-slight.conf", line 8: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 4: unknown element "its:rules"
+Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 5: unknown element "its:translateRule"
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 5: invalid attribute 'translate'
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 5: invalid attribute 'selector'
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 6: invalid attribute 'xmlns:its'
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 6: invalid attribute 'version'
+Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 8: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/11-lcdfilter-default.conf", line 4: unknown element "its:rules"
+Fontconfig warning: "/etc/fonts/conf.d/11-lcdfilter-default.conf", line 5: unknown element "its:translateRule"
+Fontconfig error: "/etc/fonts/conf.d/11-lcdfilter-default.conf", line 5: invalid attribute 'translate'
+Fontconfig error: "/etc/fonts/conf.d/11-lcdfilter-default.conf", line 5: invalid attribute 'selector'
+Fontconfig error: "/etc/fonts/conf.d/11-lcdfilter-default.conf", line 6: invalid attribute 'xmlns:its'
+Fontconfig error: "/etc/fonts/conf.d/11-lcdfilter-default.conf", line 6: invalid attribute 'version'
+Fontconfig warning: "/etc/fonts/conf.d/11-lcdfilter-default.conf", line 8: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/20-unhint-small-vera.conf", line 4: unknown element "its:rules"
+Fontconfig warning: "/etc/fonts/conf.d/20-unhint-small-vera.conf", line 5: unknown element "its:translateRule"
+Fontconfig error: "/etc/fonts/conf.d/20-unhint-small-vera.conf", line 5: invalid attribute 'translate'
+Fontconfig error: "/etc/fonts/conf.d/20-unhint-small-vera.conf", line 5: invalid attribute 'selector'
+Fontconfig error: "/etc/fonts/conf.d/20-unhint-small-vera.conf", line 6: invalid attribute 'xmlns:its'
+Fontconfig error: "/etc/fonts/conf.d/20-unhint-small-vera.conf", line 6: invalid attribute 'version'
+Fontconfig warning: "/etc/fonts/conf.d/20-unhint-small-vera.conf", line 8: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/30-metric-aliases.conf", line 4: unknown element "its:rules"
+Fontconfig warning: "/etc/fonts/conf.d/30-metric-aliases.conf", line 5: unknown element "its:translateRule"
+Fontconfig error: "/etc/fonts/conf.d/30-metric-aliases.conf", line 5: invalid attribute 'translate'
+Fontconfig error: "/etc/fonts/conf.d/30-metric-aliases.conf", line 5: invalid attribute 'selector'
+Fontconfig error: "/etc/fonts/conf.d/30-metric-aliases.conf", line 6: invalid attribute 'xmlns:its'
+Fontconfig error: "/etc/fonts/conf.d/30-metric-aliases.conf", line 6: invalid attribute 'version'
+Fontconfig warning: "/etc/fonts/conf.d/30-metric-aliases.conf", line 8: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/40-nonlatin.conf", line 4: unknown element "its:rules"
+Fontconfig warning: "/etc/fonts/conf.d/40-nonlatin.conf", line 5: unknown element "its:translateRule"
+Fontconfig error: "/etc/fonts/conf.d/40-nonlatin.conf", line 5: invalid attribute 'translate'
+Fontconfig error: "/etc/fonts/conf.d/40-nonlatin.conf", line 5: invalid attribute 'selector'
+Fontconfig error: "/etc/fonts/conf.d/40-nonlatin.conf", line 6: invalid attribute 'xmlns:its'
+Fontconfig error: "/etc/fonts/conf.d/40-nonlatin.conf", line 6: invalid attribute 'version'
+Fontconfig warning: "/etc/fonts/conf.d/40-nonlatin.conf", line 8: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/45-generic.conf", line 4: unknown element "its:rules"
+Fontconfig warning: "/etc/fonts/conf.d/45-generic.conf", line 5: unknown element "its:translateRule"
+Fontconfig error: "/etc/fonts/conf.d/45-generic.conf", line 5: invalid attribute 'translate'
+Fontconfig error: "/etc/fonts/conf.d/45-generic.conf", line 5: invalid attribute 'selector'
+Fontconfig error: "/etc/fonts/conf.d/45-generic.conf", line 6: invalid attribute 'xmlns:its'
+Fontconfig error: "/etc/fonts/conf.d/45-generic.conf", line 6: invalid attribute 'version'
+Fontconfig warning: "/etc/fonts/conf.d/45-generic.conf", line 8: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/45-latin.conf", line 4: unknown element "its:rules"
+Fontconfig warning: "/etc/fonts/conf.d/45-latin.conf", line 5: unknown element "its:translateRule"
+Fontconfig error: "/etc/fonts/conf.d/45-latin.conf", line 5: invalid attribute 'translate'
+Fontconfig error: "/etc/fonts/conf.d/45-latin.conf", line 5: invalid attribute 'selector'
+Fontconfig error: "/etc/fonts/conf.d/45-latin.conf", line 6: invalid attribute 'xmlns:its'
+Fontconfig error: "/etc/fonts/conf.d/45-latin.conf", line 6: invalid attribute 'version'
+Fontconfig warning: "/etc/fonts/conf.d/45-latin.conf", line 8: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/49-sansserif.conf", line 4: unknown element "its:rules"
+Fontconfig warning: "/etc/fonts/conf.d/49-sansserif.conf", line 5: unknown element "its:translateRule"
+Fontconfig error: "/etc/fonts/conf.d/49-sansserif.conf", line 5: invalid attribute 'translate'
+Fontconfig error: "/etc/fonts/conf.d/49-sansserif.conf", line 5: invalid attribute 'selector'
+Fontconfig error: "/etc/fonts/conf.d/49-sansserif.conf", line 6: invalid attribute 'xmlns:its'
+Fontconfig error: "/etc/fonts/conf.d/49-sansserif.conf", line 6: invalid attribute 'version'
+Fontconfig warning: "/etc/fonts/conf.d/49-sansserif.conf", line 8: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/50-user.conf", line 4: unknown element "its:rules"
+Fontconfig warning: "/etc/fonts/conf.d/50-user.conf", line 5: unknown element "its:translateRule"
+Fontconfig error: "/etc/fonts/conf.d/50-user.conf", line 5: invalid attribute 'translate'
+Fontconfig error: "/etc/fonts/conf.d/50-user.conf", line 5: invalid attribute 'selector'
+Fontconfig error: "/etc/fonts/conf.d/50-user.conf", line 6: invalid attribute 'xmlns:its'
+Fontconfig error: "/etc/fonts/conf.d/50-user.conf", line 6: invalid attribute 'version'
+Fontconfig warning: "/etc/fonts/conf.d/50-user.conf", line 8: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/51-local.conf", line 4: unknown element "its:rules"
+Fontconfig warning: "/etc/fonts/conf.d/51-local.conf", line 5: unknown element "its:translateRule"
+Fontconfig error: "/etc/fonts/conf.d/51-local.conf", line 5: invalid attribute 'translate'
+Fontconfig error: "/etc/fonts/conf.d/51-local.conf", line 5: invalid attribute 'selector'
+Fontconfig error: "/etc/fonts/conf.d/51-local.conf", line 6: invalid attribute 'xmlns:its'
+Fontconfig error: "/etc/fonts/conf.d/51-local.conf", line 6: invalid attribute 'version'
+Fontconfig warning: "/etc/fonts/conf.d/51-local.conf", line 8: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/60-generic.conf", line 4: unknown element "its:rules"
+Fontconfig warning: "/etc/fonts/conf.d/60-generic.conf", line 5: unknown element "its:translateRule"
+Fontconfig error: "/etc/fonts/conf.d/60-generic.conf", line 5: invalid attribute 'translate'
+Fontconfig error: "/etc/fonts/conf.d/60-generic.conf", line 5: invalid attribute 'selector'
+Fontconfig error: "/etc/fonts/conf.d/60-generic.conf", line 6: invalid attribute 'xmlns:its'
+Fontconfig error: "/etc/fonts/conf.d/60-generic.conf", line 6: invalid attribute 'version'
+Fontconfig warning: "/etc/fonts/conf.d/60-generic.conf", line 8: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/60-latin.conf", line 4: unknown element "its:rules"
+Fontconfig warning: "/etc/fonts/conf.d/60-latin.conf", line 5: unknown element "its:translateRule"
+Fontconfig error: "/etc/fonts/conf.d/60-latin.conf", line 5: invalid attribute 'translate'
+Fontconfig error: "/etc/fonts/conf.d/60-latin.conf", line 5: invalid attribute 'selector'
+Fontconfig error: "/etc/fonts/conf.d/60-latin.conf", line 6: invalid attribute 'xmlns:its'
+Fontconfig error: "/etc/fonts/conf.d/60-latin.conf", line 6: invalid attribute 'version'
+Fontconfig warning: "/etc/fonts/conf.d/60-latin.conf", line 8: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/65-fonts-persian.conf", line 34: unknown element "its:rules"
+Fontconfig warning: "/etc/fonts/conf.d/65-fonts-persian.conf", line 35: unknown element "its:translateRule"
+Fontconfig error: "/etc/fonts/conf.d/65-fonts-persian.conf", line 35: invalid attribute 'translate'
+Fontconfig error: "/etc/fonts/conf.d/65-fonts-persian.conf", line 35: invalid attribute 'selector'
+Fontconfig error: "/etc/fonts/conf.d/65-fonts-persian.conf", line 36: invalid attribute 'xmlns:its'
+Fontconfig error: "/etc/fonts/conf.d/65-fonts-persian.conf", line 36: invalid attribute 'version'
+Fontconfig warning: "/etc/fonts/conf.d/65-nonlatin.conf", line 4: unknown element "its:rules"
+Fontconfig warning: "/etc/fonts/conf.d/65-nonlatin.conf", line 5: unknown element "its:translateRule"
+Fontconfig error: "/etc/fonts/conf.d/65-nonlatin.conf", line 5: invalid attribute 'translate'
+Fontconfig error: "/etc/fonts/conf.d/65-nonlatin.conf", line 5: invalid attribute 'selector'
+Fontconfig error: "/etc/fonts/conf.d/65-nonlatin.conf", line 6: invalid attribute 'xmlns:its'
+Fontconfig error: "/etc/fonts/conf.d/65-nonlatin.conf", line 6: invalid attribute 'version'
+Fontconfig warning: "/etc/fonts/conf.d/65-nonlatin.conf", line 8: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/69-unifont.conf", line 4: unknown element "its:rules"
+Fontconfig warning: "/etc/fonts/conf.d/69-unifont.conf", line 5: unknown element "its:translateRule"
+Fontconfig error: "/etc/fonts/conf.d/69-unifont.conf", line 5: invalid attribute 'translate'
+Fontconfig error: "/etc/fonts/conf.d/69-unifont.conf", line 5: invalid attribute 'selector'
+Fontconfig error: "/etc/fonts/conf.d/69-unifont.conf", line 6: invalid attribute 'xmlns:its'
+Fontconfig error: "/etc/fonts/conf.d/69-unifont.conf", line 6: invalid attribute 'version'
+Fontconfig warning: "/etc/fonts/conf.d/70-no-bitmaps.conf", line 4: unknown element "its:rules"
+Fontconfig warning: "/etc/fonts/conf.d/70-no-bitmaps.conf", line 5: unknown element "its:translateRule"
+Fontconfig error: "/etc/fonts/conf.d/70-no-bitmaps.conf", line 5: invalid attribute 'translate'
+Fontconfig error: "/etc/fonts/conf.d/70-no-bitmaps.conf", line 5: invalid attribute 'selector'
+Fontconfig error: "/etc/fonts/conf.d/70-no-bitmaps.conf", line 6: invalid attribute 'xmlns:its'
+Fontconfig error: "/etc/fonts/conf.d/70-no-bitmaps.conf", line 6: invalid attribute 'version'
+Fontconfig warning: "/etc/fonts/conf.d/70-no-bitmaps.conf", line 8: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/80-delicious.conf", line 4: unknown element "its:rules"
+Fontconfig warning: "/etc/fonts/conf.d/80-delicious.conf", line 5: unknown element "its:translateRule"
+Fontconfig error: "/etc/fonts/conf.d/80-delicious.conf", line 5: invalid attribute 'translate'
+Fontconfig error: "/etc/fonts/conf.d/80-delicious.conf", line 5: invalid attribute 'selector'
+Fontconfig error: "/etc/fonts/conf.d/80-delicious.conf", line 6: invalid attribute 'xmlns:its'
+Fontconfig error: "/etc/fonts/conf.d/80-delicious.conf", line 6: invalid attribute 'version'
+Fontconfig warning: "/etc/fonts/conf.d/90-synthetic.conf", line 4: unknown element "its:rules"
+Fontconfig warning: "/etc/fonts/conf.d/90-synthetic.conf", line 5: unknown element "its:translateRule"
+Fontconfig error: "/etc/fonts/conf.d/90-synthetic.conf", line 5: invalid attribute 'translate'
+Fontconfig error: "/etc/fonts/conf.d/90-synthetic.conf", line 5: invalid attribute 'selector'
+Fontconfig error: "/etc/fonts/conf.d/90-synthetic.conf", line 6: invalid attribute 'xmlns:its'
+Fontconfig error: "/etc/fonts/conf.d/90-synthetic.conf", line 6: invalid attribute 'version'
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'focus', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'blur', windowId: 1 }

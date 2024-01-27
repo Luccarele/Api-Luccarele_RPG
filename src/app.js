@@ -108,5 +108,17 @@ app.delete('/NPC/:id', (req, res) =>{
   NPC.splice(index, 1)
   res.send(`NPC com id ${req.params.id} excluido com sucesso!`)
 })
+
+app.put('/NPC/:id', (req, res) => {
+  let index = buscarIndexNpc(req.params.id);
+
+  if (index !== -1) {
+    NPC[index].Atrbts = req.body.Atrbts;
+    res.json(NPC);
+  } else {
+    res.status(404).json({ error: 'NPC não encontrado' });
+  }
+});
+
   
 export default app
