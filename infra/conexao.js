@@ -5,7 +5,9 @@ const conexao = mysql.createConnection({
     port: 3306,
     user: 'Luccarele',
     password: 'lucca123',
-    database: 'db_npc'
+    database: 'ativos_table'
 });
+
+conexao.connect()
 
 export default conexao;
